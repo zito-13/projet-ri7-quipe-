@@ -1,3 +1,8 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
 body {
     background-image: url(../pictures/fond-sonic.png);
     background-size: cover;
@@ -10,6 +15,15 @@ body {
     box-shadow: 0 3px 15px rgba(255, 215, 0, 0.4);
     backdrop-filter: blur(10px);
     padding: 0.5rem 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    display: none;
 }
 
 .navbar-brand {
@@ -43,6 +57,12 @@ body {
     color: white !important;
     text-shadow: 0 0 12px #FFD700;
     transform: translateY(-2px);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
 }
 
 /* RESPONSIVE NAVBAR */
