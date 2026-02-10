@@ -32,7 +32,7 @@ body::before {
 }
 
 /* ===========================
-   NAVBAR - TAILLE RÉDUITE
+   NAVBAR 
 =========================== */
 .navbar {
   background: linear-gradient(90deg, #0047AB, #003087) !important;
@@ -76,7 +76,7 @@ body::before {
 }
 
 /* ===========================
-   HERO SECTION - TAILLES RÉDUITES
+   HERO SECTION 
 =========================== */
 .hero-section {
   padding: 80px 20px 60px;  /* Réduit énormément */
@@ -155,7 +155,7 @@ body::before {
 }
 
 /* ===========================
-   CONTENT BOX - TAILLE RÉDUITE
+   CONTENT BOX
 =========================== */
 .content-box {
   background: rgba(0, 48, 135, 0.85);
@@ -195,7 +195,7 @@ body::before {
 }
 
 /* ===========================
-   UNIVERSE CARDS - TAILLE RÉDUITE
+   UNIVERSE CARDS 
 =========================== */
 .universe-card {
   background: linear-gradient(135deg, rgba(0, 71, 171, 0.9), rgba(0, 48, 135, 0.85));
@@ -262,7 +262,7 @@ body::before {
 }
 
 /* ===========================
-   CHARACTER CARDS - TAILLE RÉDUITE
+   CHARACTER CARDS 
 =========================== */
 .character-card {
   background: rgba(0, 48, 135, 0.9);
