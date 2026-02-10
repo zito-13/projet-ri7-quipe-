@@ -4,14 +4,16 @@
   
 }
 body{
-    background:linear-gradient(blue ,rgb(3, 3, 72)) ;
+    background-image:url(/assets/images/pixelbackground.png);
+    background-size: cover;
 }
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0% 2%;
-  background: blue;
+  background: radial-gradient(blue,black);
+  border-bottom: solid 2px yellow;
 
   img {
     width: 200px;
@@ -58,12 +60,14 @@ main {display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: radial-gradient(blue,black);
     border: solid 1px rgb(238, 244, 42);
     border-radius: 12px;
     box-shadow: 6px 8px 8px rgb(238, 244, 42);
-    width: 300px;
+    width: 400%;
     padding: 2%;
     img {
+        height: 300px;
       width: 200px;
       margin-bottom: 5%;
       
@@ -76,6 +80,7 @@ main {display: flex;
     h2{
         text-transform: uppercase;
         color: white;
+        padding-bottom: 3%;
     }
     p{
         color: white;
@@ -91,5 +96,6 @@ main {display: flex;
    h2{
     color: blue;
     box-shadow: 1px 1px 1px 1px white;
+    
    }
 }
