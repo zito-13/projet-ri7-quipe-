@@ -56,10 +56,6 @@ main {display: flex;
     padding: 2%;
 }
   .affiche {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: radial-gradient(blue,black);
     border: solid 1px rgb(238, 244, 42);
     border-radius: 12px;
@@ -70,25 +66,79 @@ main {display: flex;
         height: 300px;
       width: 200px;
       margin-bottom: 5%;
-      
     }
-    .date {
-        margin-top: 2%;
-      border:solid 1px;
-      padding: 2%;
+    a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
     }
     h2{
         text-transform: uppercase;
         color: white;
         padding-bottom: 3%;
     }
-    p{
-        color: white;
-    }
   }
+  .modal{
+    visibility: hidden;
+    opacity: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 255, 0.377);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .modal:target{
+      visibility: visible;
+      opacity: 1;
+    }
+    .modal_content{
+      background-color: blue;
+      padding: 2%;
+      width: 800px;
+      max-width: 90%;
+      display: flex;
+      align-items: center;
+      border-radius: 12px;
+      border: solid 1px yellow;
+      position: relative;
+      img{
+      height: 300px;
+      width: 200px;
+      margin-bottom: 5%;
+      
+      }
+      .modal_close {
+        color: yellow;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 30px;
+        text-decoration: none;
+      }
+      .details-modal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+          color: yellow;
+          text-transform: uppercase;
+          padding: 1%;
+        }
+      }
+      
+      
+    }
 }
 .affiche:hover{
-   background: rgb(255, 255, 255);
+   background: yellow;
    p{
     color: blue;
     box-shadow: 1px 1px 1px 1px white;
