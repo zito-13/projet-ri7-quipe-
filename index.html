@@ -1,12 +1,193 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonic the Hedgehog - Accueil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+<link rel="icon" type="image/x-icon" href="assets/sonic.ico">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header></header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/logo.png" alt="Sonic Wiki Zone" class="logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="comics.html">Comics</a></li>
+        <li class="nav-item"><a class="nav-link" href="jeux.html">Jeux</a></li>
+        <li class="nav-item"><a class="nav-link" href="dessin-anime.html">Dessins animés</a></li>
+        <li class="nav-item"><a class="nav-link" href="films.html">Films</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <div class="container text-center">
+    <h1 class="display-1 fw-bold hero-title">SONIC THE HEDGEHOG</h1>
+    <p class="lead hero-subtitle">Gotta Go Fast!</p>
+    <div class="mt-4 button-group">
+      <a href="comics.html" class="btn btn-hero">📚 Comics</a>
+      <a href="jeux.html" class="btn btn-hero">🎮 Jeux</a>
+      <a href="dessin-anime.html" class="btn btn-hero">📺 Dessins animés</a>
+      <a href="films.html" class="btn btn-hero">🎬 Films</a>
+    </div>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section class="container my-5">
+  <div class="content-box">
+    <h2 class="section-title">Qui est Sonic ?</h2>
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="sonic-text">
+          <span class="highlight">Sonic the Hedgehog</span> est un hérisson bleu anthropomorphe capable de courir 
+          à une vitesse supersonique. Créé par <span class="highlight">SEGA</span> en 1991, il est devenu l'une 
+          des mascottes les plus emblématiques du jeu vidéo.
+        </p>
+        <p class="sonic-text">
+          Avec ses <span class="highlight">Chaos Emeralds</span>, Sonic peut se transformer en 
+          <span class="highlight">Super Sonic</span>, une forme surpuissante qui le rend doré. 
+          Accompagné de ses amis Tails, Knuckles, Amy et Shadow, il affronte régulièrement le 
+          <span class="highlight">Dr. Eggman</span> pour sauver le monde.
+        </p>
+        <p class="sonic-text">
+          Au fil des décennies, Sonic s'est décliné en <strong>jeux vidéo</strong>, <strong>comics</strong>, 
+          <strong>séries animées</strong> et <strong>films</strong>, devenant une véritable franchise multimédia.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNIVERS SONIC -->
+<section class="container my-5">
+  <h2 class="section-title text-center mb-5">L'univers de Sonic</h2>
+  <div class="row g-4">
     
+    <div class="col-md-6 col-lg-3">
+      <div class="universe-card">
+        <div class="card-icon">📚</div>
+        <h3>Comics</h3>
+        <p>Des centaines d'issues publiées par Archie Comics et IDW Publishing depuis 1993</p>
+        <a href="comics.html" class="btn btn-outline-custom">Découvrir</a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="universe-card">
+        <div class="card-icon">🎮</div>
+        <h3>Jeux vidéo</h3>
+        <p>Plus de 30 ans de jeux sur toutes les plateformes, de la Mega Drive à la PS5</p>
+        <a href="jeux.html" class="btn btn-outline-custom">Découvrir</a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="universe-card">
+        <div class="card-icon">📺</div>
+        <h3>Dessins animés</h3>
+        <p>De Sonic X à Sonic Prime, des séries cultes qui ont marqué plusieurs générations</p>
+        <a href="dessin-anime.html" class="btn btn-outline-custom">Découvrir</a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="universe-card">
+        <div class="card-icon">🎬</div>
+        <h3>Films</h3>
+        <p>La trilogie de films live-action qui a conquis le box-office mondial</p>
+        <a href="films.html" class="btn btn-outline-custom">Découvrir</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PERSONNAGES -->
+<section class="container my-5">
+  <div class="content-box">
+    <h2 class="section-title text-center mb-4">Personnages principaux</h2>
+    <div class="row g-4">
+      
+      <!-- SONIC -->
+      <div class="col-md-6 col-lg-4">
+        <div class="character-card">
+          <img src="assets/Sonic.png" alt="Sonic" class="character-img">
+          <h3>Sonic</h3>
+          <p>Le hérisson bleu le plus rapide du monde, toujours prêt à sauver ses amis</p>
+        </div>
+      </div>
+
+      <!-- TAILS -->
+      <div class="col-md-6 col-lg-4">
+        <div class="character-card">
+          <img src="assets/Tails.png" alt="Tails" class="character-img">
+          <h3>Tails</h3>
+          <p>Le renard à deux queues, génie mécanique et meilleur ami de Sonic</p>
+        </div>
+      </div>
+
+      <!-- KNUCKLES -->
+      <div class="col-md-6 col-lg-4">
+        <div class="character-card">
+          <img src="assets/Knuckles.png" alt="Knuckles" class="character-img">
+          <h3>Knuckles</h3>
+          <p>L'échidné gardien de la Master Emerald, puissant et loyal</p>
+        </div>
+      </div>
+
+      <!-- AMY ROSE -->
+      <div class="col-md-6 col-lg-4">
+        <div class="character-card">
+          <img src="assets/Amy.png" alt="Amy Rose" class="character-img">
+          <h3>Amy Rose</h3>
+          <p>La hérissone rose avec son marteau Piko Piko, courageuse et déterminée</p>
+        </div>
+      </div>
+
+      <!-- SHADOW -->
+      <div class="col-md-6 col-lg-4">
+        <div class="character-card">
+          <img src="assets/Shadow.png" alt="Shadow" class="character-img">
+          <h3>Shadow</h3>
+          <p>Le hérisson noir, forme de vie ultime et rival de Sonic</p>
+        </div>
+      </div>
+
+      <!-- DR. EGGMAN -->
+      <div class="col-md-6 col-lg-4">
+        <div class="character-card">
+          <img src="assets/Eggman.png" alt="Dr. Eggman" class="character-img">
+          <h3>Dr. Eggman</h3>
+          <p>Le génie maléfique qui rêve de conquérir le monde et de créer Eggmanland</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer text-center py-4">
+  <p>&copy; 2026 Site créé par Ryan, Emilie, Aurélien et Jojo</p>
+  <p class="small">SEGA et Sonic the Hedgehog sont des marques déposées de SEGA Corporation</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
