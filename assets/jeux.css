@@ -1,29 +1,16 @@
 * {
     padding: 0%;
     margin: 0%;
-}
-
-body {
-    background-image: url(../pictures/fond-sonic.png);
-    background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'SEGA LOGO FONT', sans-serif;
+    font-weight: 10;
 }
 
 .navbar {
-    background: linear-gradient(90deg, #0047AB, #003087) !important;
+    background: radial-gradient(blue, black);
     border-bottom: 3px solid #FFD700;
     box-shadow: 0 3px 15px rgba(255, 215, 0, 0.4);
     backdrop-filter: blur(10px);
     padding: 0.5rem 0;
-}
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-button {
-    display: none;
 }
 
 .navbar-brand {
@@ -33,6 +20,7 @@ button {
 
 .logo-img {
     height: 40px;
+    /* Réduit de 50px à 40px */
     width: auto;
     filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
     transition: all 0.3s;
@@ -50,6 +38,7 @@ button {
     margin: 0 8px;
     text-transform: uppercase;
     font-size: 0.9rem;
+    /* Réduit de 1rem à 0.9rem */
 }
 
 .nav-link:hover,
@@ -59,44 +48,17 @@ button {
     transform: translateY(-2px);
 }
 
-ul {
-    list-style: none;
-    display: flex;
+body {
+    background-image: url(../pictures/fond-sonic.png);
+    background-size: cover;
+}
+
+footer {
     text-align: center;
-}
-
-/* RESPONSIVE NAVBAR */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 0.5rem 0;
-    }
-
-    .logo-img {
-        height: 32px;
-    }
-
-    .nav-link {
-        font-size: 0.95rem;
-        margin: 8px 0;
-        padding: 8px 15px;
-        text-align: center;
-    }
-
-    .navbar-collapse {
-        background: rgba(0, 48, 135, 0.95);
-        margin-top: 10px;
-        border-radius: 10px;
-        padding: 10px 0;
-    }
-}
-
-@media (max-width: 576px) {
-    .logo-img {
-        height: 28px;
-    }
-
-    .nav-link {
-        font-size: 0.9rem;
-        padding: 6px 12px;
-    }
+    padding: 2rem 1rem;
+    background: radial-gradient(blue, black);
+    color: #9ecfff;
+    font-size: 0.9rem;
+    border-top: 2px solid var(--cyan);
+    box-shadow: 0 -5px 25px rgba(0, 200, 255, 0.3);
 }
