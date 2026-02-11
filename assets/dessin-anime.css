@@ -31,18 +31,7 @@ header {
     color: white;
   }
 }
-.affiche:hover{
-   background: yellow;
-   p{
-    color: blue;
-    box-shadow: 1px 1px 1px 1px white;
-   }
-   h2{
-    color: blue;
-    box-shadow: 1px 1px 1px 1px white;
-    
-   }
-}
+
 footer{
 text-align:center;
 padding:2rem 1rem;
