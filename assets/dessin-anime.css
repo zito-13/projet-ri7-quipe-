@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'SEGA LOGO FONT', sans-serif;
+  font-weight:10 ;
+}
+body{
+    background-image: url(/assets/images/pixelbackground.png);
+    background-size: cover ;
+    
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 20, 0.542);
+  z-index: -1;
+}
+
+.navbar {
+ background: radial-gradient(blue,black); !important;
+  border-bottom: 3px solid #FFD700;
+  box-shadow: 0 3px 15px rgba(255, 215, 0, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;  /* Réduit de 50px à 40px */
+  width: auto;
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+  transition: all 0.3s;
+}
+
+.logo-img:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9));
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #FFD700 !important;
+  transition: all 0.3s;
+  margin: 0 8px;
+  text-transform: uppercase;
+  font-size: 0.9rem;  /* Réduit de 1rem à 0.9rem */
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: white !important;
+  text-shadow: 0 0 12px #FFD700;
+  transform: translateY(-2px);
+}
+
+main {display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+
+    img{
+        padding-bottom: 5%;
+    }
+  h1{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    color: yellow;
+    padding: 4%;
+    font-size: 60px;
+  }
+.ligne{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 2%;
+}
+  .affiche {
+    background: radial-gradient(blue,black);
+    border-radius: 12px;
+    box-shadow: 6px 8px 8px rgb(238, 244, 42);
+    width: 400%;
+    max-width: 100%;
+    padding: 2%;
+    img {
+      height: 300px;
+      width: 200px;
+      margin-bottom: 5%;
+    }
+    a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+    }
+    h2{
+        text-transform: uppercase;
+        color: white;
+        padding-bottom: 3%;
+    }
+  }
+  .modal{
+    visibility: hidden;
+    opacity: 0;
+      background: rgba(0, 0, 255, 0.377);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .modal:target{
+      visibility: visible;
+      opacity: 1;
+    }
+    .modal_content{
+      background: radial-gradient(blue,black);
+      padding: 2%;
+      width: 800px;
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 12px;
+      border: solid 1px yellow;
+      position: relative;
+      img{
+      height: 300px;
+      width: 200px;
+      margin-bottom: 5%;
+      }
+      p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+        padding: 2%;
+        
+      }
+      .modal_close {
+        color: yellow;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 30px;
+        text-decoration: none;
+      }
+      .details-modal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+          text-align: none;
+          color: yellow;
+          text-transform: uppercase;
+        }
+      }
+      
+      
+    }
+}
+.affiche:hover{
+    background: radial-gradient(black, blue);
+   
+   h2{
+    color: yellow;
+    
+   }
+}
+footer{
+text-align:center;
+padding:2rem 1rem;
+ background: radial-gradient(blue,black);
+color:#9ecfff;
+font-size:0.9rem;
+border-top:2px solid var(--cyan);
+box-shadow:0 -5px 25px rgba(0,200,255,0.3);
+}
+.affiche:hover{
+transform:translateY(-12px) scale(1.04);
+box-shadow:
+0 0 20px var(--bleu-electrique),
+0 0 40px rgba(0,200,255,0.5);
+}
+@keyframes neonPulse{
+0%,100%{
+text-shadow:
+0 0 10px var(--bleu-electrique),
+0 0 25px var(--cyan);
+}
+50%{
+text-shadow:
+0 0 25px var(--bleu-electrique),
+0 0 50px var(--cyan);
+}
+}
+
+@media (max-width:770px){
+
+  .ligne{
+    flex-direction: column;
+  }
+  .affiche{
+    width: 400%;
+    img{
+      padding: 0% 5%;
+    }
+  }
+  
+}
