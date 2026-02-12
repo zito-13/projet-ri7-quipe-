@@ -1,0 +1,354 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'SEGA LOGO FONT', sans-serif;
+  font-weight:10 ;
+}
+
+/* ============================= */
+/* PALETTE ULTRA BLEUE */
+:root{
+--bleu-principal:#;
+--bleu-electrique:#009dff;
+--bleu-nuit:#07152a;
+--bleu-fonce:#031022;
+--bleu-clair:#7fd3ff;
+--cyan:#00e5ff;
+--blanc:#ffffff;
+--gris:#cfd8dc;
+}
+
+/* ============================= */
+/* BODY */
+
+body {
+background-color: #04152f;
+color:var(--gris);
+line-height:1.6;
+scroll-behavior:smooth;
+}
+
+/* ============================= */
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 2%;
+  background: radial-gradient(blue,black);
+  border-bottom: solid 2px yellow;
+.navbar {
+  background: linear-gradient(90deg, #0047AB, #003087) !important;
+  border-bottom: 3px solid #FFD700;
+  box-shadow: 0 3px 15px rgba(255, 215, 0, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;  
+  width: auto;
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+  transition: all 0.3s;
+}
+
+.logo-img:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9));
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #FFD700 !important;
+  transition: all 0.3s;
+  margin: 0 8px;
+  text-transform: uppercase;
+  font-size: 0.9rem;  
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: white !important;
+  text-shadow: 0 0 12px #FFD700;
+  transform: translateY(-2px);
+
+
+background: radial-gradient(blue,black); 
+}}
+/* Animation néon */
+@keyframes neonPulse{
+0%,100%{
+text-shadow:
+0 0 10px var(--bleu-electrique),
+0 0 25px var(--cyan);
+}
+50%{
+text-shadow:
+0 0 25px var(--bleu-electrique),
+0 0 50px var(--cyan);
+}
+}
+
+/* ============================= */
+/* SECTIONS */
+.section{
+padding:4rem 2rem;
+max-width:1200px;
+margin:0 auto;
+}
+
+.section h2{
+font-size:2.2rem;
+margin-bottom:2rem;
+text-align:center;
+color:var(--cyan);
+text-shadow:0 0 12px var(--bleu-electrique);
+}
+
+/* ============================= */
+/* FILMS */
+.films{
+display:flex;
+flex-wrap:wrap;
+gap:2rem;
+justify-content:center;
+}
+
+.film{
+background:linear-gradient(160deg, #04152f, #0a254f);
+border-radius:18px;
+overflow:hidden;
+width:300px;
+box-shadow:0 0 20px rgba(0,140,255,0.15);
+transition:all .35s ease;
+position:relative;
+border:1px solid rgba(0,200,255,0.15);
+}
+
+.film:hover{
+transform:translateY(-12px) scale(1.04);
+box-shadow:
+0 0 20px var(--bleu-electrique),
+0 0 40px rgba(0,200,255,0.5);
+}
+
+.film img{
+width:100%;
+display:block;
+transition:transform .6s;
+}
+
+.film:hover img{
+transform:scale(1.08);
+filter:brightness(1.15) saturate(1.2);
+}
+
+.film h3{
+font-size:1.5rem;
+margin:1rem;
+text-align:center;
+color:var(--bleu-clair);
+text-shadow:0 0 10px var(--bleu-electrique);
+}
+
+.film p{
+margin:0 1rem 1rem;
+font-size:0.95rem;
+}
+  
+  .modal{
+    visibility: hidden;
+    opacity: 0;
+      background: rgba(0, 0, 255, 0.377);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .modal:target{
+      visibility: visible;
+      opacity: 1;
+    }
+    .modal_content{
+      background: radial-gradient(blue,black);
+      padding: 2%;
+      width: 800px;
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 12px;
+      border: solid 1px yellow;
+      position: relative;
+      img{
+      height: 300px;
+      width: 200px;
+      margin-bottom: 5%;
+      }
+      p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+        padding: 2%;
+        
+      }
+      .modal_close {
+        color: yellow;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 30px;
+        text-decoration: none;
+      }
+      .details-modal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+          text-align: none;
+          color: yellow;
+          text-transform: uppercase;
+        }
+      }
+      
+      
+    }
+
+
+.section {
+  display: flex;
+  flex-direction: column; /* important car tu as un h2 */
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #0a84ff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.info {
+  background: linear-gradient(160deg, #051a38, #0b2c5f);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: left;
+  max-width: 900px;
+  width: 100%;
+  transition: all .3s ease;
+  border: 1px solid rgba(0,170,255,0.2);
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+
+.info:hover {
+  transform: scale(1.02);
+  box-shadow:
+    0 0 25px rgba(0,170,255,0.6),
+    0 0 50px rgba(0,200,255,0.4);
+  background: linear-gradient(160deg, #0a84ff, #042b70);
+}
+
+
+.info p {
+  margin-bottom: 1rem;
+}
+
+.info strong,
+.info b {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #00c8ff;
+}
+
+.info img {
+  width: 100px;
+  margin-bottom: 1rem;
+  transition: transform .5s;
+}
+
+.info:hover img {
+  transform: rotate(8deg) scale(1.1);
+}
+
+
+
+
+/* ============================= */
+/* FOOTER */
+footer{
+text-align:center;
+padding:2rem 1rem;
+ background: radial-gradient(blue,black);
+color:#9ecfff;
+font-size:0.9rem;
+border-top:2px solid var(--cyan);
+box-shadow:0 -5px 25px rgba(0,200,255,0.3);
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+.films,.personnages{
+    flex-direction:column;
+    align-items:center;
+}
+
+header h1.glow{
+    font-size:2.2rem;
+}
+
+header p.glow-text{
+    font-size:1.1rem;
+}
+
+}
+/* RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .logo-img {
+    height: 32px;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+    margin: 8px 0;
+    padding: 8px 15px;
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    background: rgba(0, 48, 135, 0.95);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-img {
+    height: 28px;
+  }
+}
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
