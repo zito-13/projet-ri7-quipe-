@@ -24,7 +24,7 @@ font-family: 'SEGA LOGO FONT', sans-serif;
 /* BODY */
 
 body {
-background-color: #04152f;
+background-color: #04152f !important;
 color:var(--gris);
 line-height:1.6;
 scroll-behavior:smooth;
@@ -32,15 +32,9 @@ scroll-behavior:smooth;
 
 /* ============================= */
 /* HEADER */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0% 2%;
-  background: radial-gradient(blue,black);
-  border-bottom: solid 2px yellow;
+
 .navbar {
-  background: linear-gradient(90deg, #0047AB, #003087) !important;
+  background: radial-gradient(blue,black);
   border-bottom: 3px solid #FFD700;
   box-shadow: 0 3px 15px rgba(255, 215, 0, 0.4);
   backdrop-filter: blur(10px);
@@ -78,10 +72,7 @@ header {
   color: white !important;
   text-shadow: 0 0 12px #FFD700;
   transform: translateY(-2px);
-
-
-background: radial-gradient(blue,black); 
-}}
+}
 /* Animation néon */
 @keyframes neonPulse{
 0%,100%{
@@ -102,6 +93,10 @@ text-shadow:
 padding:4rem 2rem;
 max-width:1200px;
 margin:0 auto;
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
 }
 
 .section h2{
@@ -161,66 +156,12 @@ text-shadow:0 0 10px var(--bleu-electrique);
 .film p{
 margin:0 1rem 1rem;
 font-size:0.95rem;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
 }
-  
-  .modal{
-    visibility: hidden;
-    opacity: 0;
-      background: rgba(0, 0, 255, 0.377);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-    }
-    .modal:target{
-      visibility: visible;
-      opacity: 1;
-    }
-    .modal_content{
-      background: radial-gradient(blue,black);
-      padding: 2%;
-      width: 800px;
-      max-width: 90%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 12px;
-      border: solid 1px yellow;
-      position: relative;
-      img{
-      height: 300px;
-      width: 200px;
-      margin-bottom: 5%;
-      }
-      p{
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        text-align: center;
-        padding: 2%;
-        
-      }
-      .modal_close {
-        color: yellow;
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        font-size: 30px;
-        text-decoration: none;
-      }
-      .details-modal{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h2{
-          text-align: none;
-          color: yellow;
-          text-transform: uppercase;
-        }
-      }
-      
-      
-    }
-
+.film b{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .section {
   display: flex;
@@ -262,6 +203,7 @@ font-size:0.95rem;
 
 .info p {
   margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .info strong,
