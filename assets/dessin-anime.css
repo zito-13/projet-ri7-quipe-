@@ -21,7 +21,7 @@ body::before {
 }
 
 .navbar {
- background: radial-gradient(blue,black); !important;
+ background: radial-gradient(blue,black);
   border-bottom: 3px solid #FFD700;
   box-shadow: 0 3px 15px rgba(255, 215, 0, 0.4);
   backdrop-filter: blur(10px);
